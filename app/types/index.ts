@@ -1,4 +1,4 @@
-import type { ReactNode } from "react"
+import type { ComponentPropsWithoutRef, ReactNode } from "react"
 
 // Data Types
 export type Model = {
@@ -61,7 +61,7 @@ export type ModelsGridProps = {
 export type PillProps = {
     children: ReactNode
     className?: string
-}
+} & ComponentPropsWithoutRef<"span">
 
 export type NavLinkProps = {
     href: string
